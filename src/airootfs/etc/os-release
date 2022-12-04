@@ -1,0 +1,7 @@
+NAME="Cvm UI Desktop"
+PRETTY_NAME="Cvm UI Desktop 5.1"
+ID=cvm-ui-desktop
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://bit.ly/jiafeishop/"
+LOGO=cvm-ui-desktop-logo
