@@ -115,7 +115,6 @@ zsh
 # network and system
 networkmanager
 network-manager-applet
-dkms
 
 # gpu drivers
 xf86-video-qxl
@@ -123,14 +122,26 @@ xf86-video-intel
 xf86-video-amdgpu
 nvidia
 nvidia-utils
-nvidia-dkms
 
 # xorg
 xorg
 xorg-server
 xorg-xinit
 
-# gnome 
-gnome
-gnome-tweaks
-gdm
+# pantheon
+pantheon
+pantheon-session
+lightdm
+lightdm-gtk-greeter
+lightdm-pantheon-greeter
+#switchboard-plug-pantheon-tweaks-git
+#pantheon-dock-git
+
+# fonts
+ttf-droid
+ttf-opensans
+ttf-roboto
+noto-fonts
+
+# web
+firefox
