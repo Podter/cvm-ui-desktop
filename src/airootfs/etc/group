@@ -1,7 +1,0 @@
-root:x:0:root
-adm:x:4:jiafei
-wheel:x:10:jiafei
-uucp:x:14:jiafei
-jiafei:x:1000:
-nopasswdlogin:x:966:jiafei
-autologin:x:967:jiafei
