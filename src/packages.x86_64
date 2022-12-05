@@ -130,6 +130,7 @@ xorg-xinit
 
 # plymouth
 plymouth
+plymouth-theme-cvm-spinner
 
 # pantheon
 pantheon
