@@ -141,6 +141,9 @@ lightdm-pantheon-greeter
 switchboard-plug-pantheon-tweaks-git
 pantheon-dock-git
 
+# themes
+whitesur-gtk-theme-cvm
+
 # fonts
 ttf-droid
 ttf-opensans
