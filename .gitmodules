@@ -1,0 +1,3 @@
+[submodule "pkgs/plymouth"]
+	path = pkgs/plymouth
+	url = https://aur.archlinux.org/plymouth.git
