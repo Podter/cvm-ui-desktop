@@ -127,3 +127,10 @@ nvidia-utils
 xorg
 xorg-server
 xorg-xinit
+
+# pantheon
+pantheon
+pantheon-session
+lightdm
+lightdm-gtk-greeter
+lightdm-pantheon-greeter
