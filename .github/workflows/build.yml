@@ -1,0 +1,12 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "pkgbuilds" ]
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running!"
