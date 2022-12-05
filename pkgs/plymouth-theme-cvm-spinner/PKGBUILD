@@ -10,6 +10,7 @@ package() {
 	cp -r "../${_theme}" .
     cd "${_theme}"
 	cp "../../assets/watermark.png" .
+	cp "../../assets/bgrt-fallback.png" .
 	install -m755 -d "${pkgdir}/usr/share/plymouth/themes/$_theme"
 	install -m644 -t "${pkgdir}/usr/share/plymouth/themes/$_theme" *
 }
