@@ -1,0 +1,15 @@
+_theme="cvm-spinner"
+pkgname="plymouth-theme-$_theme"
+pkgver="$(date +%Y.%m.%d.%H%M%S)"
+pkgrel=1
+pkgdesc="Cvm UI Desktop spinner"
+arch=("any")
+depends=("plymouth")
+
+package() {
+	cp -r "../${_theme}" .
+    cd "${_theme}"
+	cp "../../assets/watermark.png" .
+	install -m755 -d "${pkgdir}/usr/share/plymouth/themes/$_theme"
+	install -m644 -t "${pkgdir}/usr/share/plymouth/themes/$_theme" *
+}
