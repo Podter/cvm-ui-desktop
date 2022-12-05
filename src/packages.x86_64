@@ -138,8 +138,8 @@ pantheon-session
 lightdm
 lightdm-gtk-greeter
 lightdm-pantheon-greeter
-#switchboard-plug-pantheon-tweaks-git
-#pantheon-dock-git
+switchboard-plug-pantheon-tweaks-git
+pantheon-dock-git
 
 # fonts
 ttf-droid
