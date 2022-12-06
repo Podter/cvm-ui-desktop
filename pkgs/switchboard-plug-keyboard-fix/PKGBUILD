@@ -1,0 +1,27 @@
+pkgname=switchboard-plug-keyboard-fix
+pkgver=3.1.0
+pkgrel=1
+pkgdesc='Switchboard Keyboard Plug with some fix'
+arch=('x86_64')
+url='https://github.com/elementary/switchboard-plug-keyboard'
+license=('GPL3')
+depends=('glib2' 'glibc' 'gtk3' 'libgee' 'libgnomekbd'
+         'libxklavier' 'libxml2' 'ibus' 'libhandy-1.so'
+         'libgranite.so' 'libswitchboard-2.0.so')
+makedepends=('git' 'granite' 'meson' 'switchboard' 'vala' 'libhandy')
+provides=('switchboard-plug-keyboard')
+conflicts=('switchboard-plug-keyboard' 'switchboard-plug-keyboard-git')
+source=("${pkgver}.tar.gz::https://github.com/elementary/switchboard-plug-keyboard/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  patch switchboard-plug-keyboard-${pkgver}/src/Shortcuts/Settings.vala ../Settings.patch
+  patch switchboard-plug-keyboard-${pkgver}/src/Widgets/Shortcuts/ShortcutListBox.vala ../ShortcutListBox.patch
+
+  arch-meson switchboard-plug-keyboard-${pkgver} build
+  ninja -C build
+}
+
+package() {
+  DESTDIR="${pkgdir}" ninja -C build install
+}

@@ -1,0 +1,18 @@
+--- src/switchboard-plug-keyboard-3.1.0/src/Widgets/Shortcuts/ShortcutListBox.vala	2022-12-06 17:19:03.049710543 +0700
++++ src/switchboard-plug-keyboard-3.1.0/src/Widgets/Shortcuts/ShortcutListBox.new.vala	2022-12-06 17:18:59.069712369 +0700
+@@ -35,10 +35,12 @@
+         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
+ 
+         for (int i = 0; i < actions.length; i++) {
+-            var row = new ShortcutRow (actions[i], schemas[i], keys[i]);
+-            add (row);
++            if (settings.valid (schemas[i], keys[i])) {
++                var row = new ShortcutRow (actions[i], schemas[i], keys[i]);
++                add (row);
+ 
+-            sizegroup.add_widget (row);
++                sizegroup.add_widget (row);
++            }
+         }
+ 
+         show_all ();

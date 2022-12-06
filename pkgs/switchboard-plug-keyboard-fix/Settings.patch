@@ -1,0 +1,11 @@
+--- src/switchboard-plug-keyboard-3.1.0/src/Shortcuts/Settings.vala	2022-10-22 05:09:45.000000000 +0700
++++ src/switchboard-plug-keyboard-3.1.0/src/Shortcuts/Settings.new.vala	2022-12-06 17:15:42.079804929 +0700
+@@ -49,7 +49,7 @@
+             }
+         }
+ 
+-        private bool valid (Schema schema, string key) {
++        public bool valid (Schema schema, string key) {
+             // check if schema exists
+             if (schema < 0 || schema >= Schema.COUNT)
+                 return false;
