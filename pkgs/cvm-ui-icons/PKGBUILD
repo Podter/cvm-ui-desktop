@@ -1,0 +1,10 @@
+pkgname=cvm-ui-icons
+pkgver=1
+pkgrel=1
+pkgdesc="Icons for Cvm UI Desktop"
+arch=('any')
+
+package() {
+  mkdir -p $pkgdir/usr/share/icons/$pkgname
+  cp ../icons/* $pkgdir/usr/share/icons/$pkgname/
+}
