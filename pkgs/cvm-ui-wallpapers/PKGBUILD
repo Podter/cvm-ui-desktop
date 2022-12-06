@@ -1,0 +1,20 @@
+pkgname=cvm-ui-wallpapers
+pkgver=1
+pkgrel=1
+pkgdesc='Collection of wallpapers for Cvm UI Desktop'
+arch=(any)
+makedepends=(
+  git
+  meson
+)
+provides=(elementary-wallpapers)
+conflicts=(elementary-wallpapers)
+
+build() {
+  arch-meson ../elementary-wallpapers build
+  ninja -C build
+}
+
+package() {
+  DESTDIR="${pkgdir}" ninja -C build install
+}
