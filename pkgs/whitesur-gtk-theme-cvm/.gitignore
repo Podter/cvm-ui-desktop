@@ -1,1 +1,9 @@
-WhiteSur-gtk-theme
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!PKGBUILD
+!.SRCINFO
+!whitesur-gtk-theme.install
+!*.patch

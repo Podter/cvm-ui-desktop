@@ -1,8 +1,8 @@
 # Contributor: Mark Wagie <mark dot wagie at tutanota dot com>
 pkgname=whitesur-gtk-theme-cvm
-pkgver="$(date +%Y.%m.%d.%H%M%S)"
+pkgver=2022.10.27.r27.ge0332f2
 pkgrel=1
-pkgdesc="MacOS Big Sur like theme for GNOME desktops for Cvm UI Desktop"
+pkgdesc="MacOS Big Sur like theme for Cvm UI Desktop"
 arch=('any')
 url="https://github.com/vinceliuice/WhiteSur-gtk-theme"
 license=('GPL')
@@ -20,6 +20,11 @@ options=('!strip')
 source=(git+$url.git)
 b2sums=('SKIP')
 
+pkgver() {
+  cd WhiteSur-gtk-theme
+  git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
 package() {
   cd WhiteSur-gtk-theme
   install -d "$pkgdir/usr/share/themes"
@@ -35,10 +40,10 @@ package() {
     --dest "$pkgdir/usr/share/themes"
 
   # Plank theme
-  cd ..
-  cp -r "../plank" .
-  install -Dm644 ./plank/theme-Dark/dock.theme -t \
+  patch src/other/plank/theme-Dark/dock.theme ../../patch.patch
+  install -Dm644 src/other/plank/theme-Dark/* -t \
     "$pkgdir/usr/share/plank/themes/WhiteSur-Dark"
-  install -Dm644 ./plank/theme-Light/dock.theme -t \
+  patch src/other/plank/theme-Light/dock.theme ../../patch.patch
+  install -Dm644 src/other/plank/theme-Light/* -t \
     "$pkgdir/usr/share/plank/themes/WhiteSur-Light"
 }

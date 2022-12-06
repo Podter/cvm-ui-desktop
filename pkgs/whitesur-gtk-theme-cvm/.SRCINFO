@@ -1,6 +1,6 @@
 pkgbase = whitesur-gtk-theme-cvm
-pkgdesc = MacOS Big Sur like theme for GNOME desktops for Cvm UI Desktop
-pkgver = "$(date +%Y.%m.%d.%H%M%S)"
+pkgdesc = MacOS Big Sur like theme for Cvm UI Desktop
+pkgver = 2022.02.21.r29.ge31ad8a
 pkgrel = 1
 url = https://github.com/vinceliuice/WhiteSur-gtk-theme
 arch = any

@@ -1,0 +1,14 @@
+--- dock.theme	2022-12-06 16:49:21.940532014 +0700
++++ dock.new.theme	2022-12-06 16:52:33.230443230 +0700
+@@ -2,9 +2,9 @@
+ 
+ [PlankTheme]
+ #The roundness of the top corners.
+-TopRoundness=23
++TopRoundness=0
+ #The roundness of the bottom corners.
+-BottomRoundness=23
++BottomRoundness=0
+ #The thickness (in pixels) of lines drawn.
+ LineWidth=0
+ #The color (RGBA) of the outer stroke.
