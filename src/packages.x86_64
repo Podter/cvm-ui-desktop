@@ -142,11 +142,19 @@ switchboard-plug-pantheon-tweaks-git
 pantheon-dock-git
 switchboard-plug-keyboard-fix
 lightpad
+appcenter
+gnome-weather
+file-roller
+pantheon-print
+evince
+onlyoffice-bin
 
 # themes
 whitesur-gtk-theme-cvm
 bibata-cursor-theme-cvm
 cvm-ui-wallpapers
+cutefish-icons
+cvm-ui-icons
 
 # fonts
 ttf-droid
