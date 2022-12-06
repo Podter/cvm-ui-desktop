@@ -140,9 +140,12 @@ lightdm-gtk-greeter
 lightdm-pantheon-greeter
 switchboard-plug-pantheon-tweaks-git
 pantheon-dock-git
+switchboard-plug-keyboard-fix
+lightpad
 
 # themes
 whitesur-gtk-theme-cvm
+bibata-cursor-theme-cvm
 
 # fonts
 ttf-droid
