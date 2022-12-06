@@ -1,0 +1,17 @@
+pkgname=bibata-cursor-theme-cvm
+pkgver=2.0.3
+pkgrel=1
+pkgdesc="Purple and rounded edge Bibata cursors. Made for Cvm UI Desktop."
+arch=('any')
+url="https://github.com/ful1e5/Bibata_Cursor"
+license=('GPL3')
+provides=("${pkgname%-cvm}")
+conflicts=("${pkgname%-cvm}" "${pkgname%-bin}")
+options=('!strip')
+source=("${pkgname}.tar.gz::file://${pwd}/${pkgname}.tar.gz")
+sha256sums=("SKIP")
+
+package() {
+  install -d "$pkgdir/usr/share/icons"
+  cp -r Bibata*  "$pkgdir/usr/share/icons"
+}
