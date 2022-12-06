@@ -1,6 +1,6 @@
 _theme="cvm-spinner"
 pkgname="plymouth-theme-$_theme"
-pkgver="$(date +%Y.%m.%d.%H%M%S)"
+pkgver="1"
 pkgrel=1
 pkgdesc="Cvm UI Desktop spinner"
 arch=("any")
