@@ -1,0 +1,12 @@
+--- src/lightpad-0.0.8/data/com.github.libredeb.lightpad.desktop	2022-12-07 22:57:21.387364533 +0700
++++ src/lightpad-0.0.8/data/com.github.libredeb.lightpad.new.desktop	2022-12-07 22:57:31.747364433 +0700
+@@ -4,8 +4,7 @@
+ Comment=Lightweight, look nice and powerful application launcher
+ Categories=GNOME;GTK;Utility;
+ Exec=com.github.libredeb.lightpad
+-Icon=lightpad
++Icon=/usr/share/icons/cvm-ui-icons/apps.png
+ Terminal=false
+ Type=Application
+-NoDisplay=true
+ StartupNotify=false
