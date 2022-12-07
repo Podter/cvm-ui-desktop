@@ -42,10 +42,10 @@ build() {
               -DCMAKE_INSTALL_LIBDIR=lib \
               -DWITH_PYTHONQT:BOOL=ON \
               -DBoost_NO_BOOST_CMAKE=ON \
-              -DSKIP_MODULES="webview interactiveterminal initramfs \
-                              initramfscfg dracut dracutlukscfg \
-                              dummyprocess dummypython dummycpp \
-                              dummypythonqt services-openrc"
+            #   -DSKIP_MODULES="webview interactiveterminal initramfs \
+            #                   initramfscfg dracut dracutlukscfg \
+            #                   dummyprocess dummypython dummycpp \
+            #                   dummypythonqt services-openrc"
         make
 }
 
