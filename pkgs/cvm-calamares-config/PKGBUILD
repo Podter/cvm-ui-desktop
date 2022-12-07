@@ -1,0 +1,13 @@
+pkgname=cvm-calamares-config
+_dest="/etc"
+pkgver=22.06
+pkgrel=1
+pkgdesc="Calamares config for Cvm UI Desktop"
+arch=('any')
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+package() {
+	install -dm755 ${pkgdir}${_dest}
+	cp -r ../calamares ${pkgdir}${_dest}
+}
