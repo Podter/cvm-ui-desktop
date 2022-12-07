@@ -1,5 +1,5 @@
 pkgname=cvm-calamares-config
-_dest="/usr/share"
+_dest="/etc"
 pkgver=22.06
 pkgrel=1
 pkgdesc="Calamares config for Cvm UI Desktop"
