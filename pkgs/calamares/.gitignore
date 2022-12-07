@@ -2,3 +2,4 @@ calamares
 pkg
 src
 *.pkg.tar.*
+calamares-*.tar.gz
