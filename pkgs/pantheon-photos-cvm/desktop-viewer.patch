@@ -1,0 +1,11 @@
+--- src/photos-2.8.0/data/io.elementary.photos-viewer.desktop.in.in	2022-11-16 02:10:06.000000000 +0700
++++ src/photos-2.8.0/data/io.elementary.photos-viewer.desktop.in.new.in	2022-12-08 15:53:54.441408075 +0700
+@@ -2,7 +2,7 @@
+ Name=Photo Viewer
+ GenericName=Photo Viewer
+ Exec=@EXEC_NAME@ %U
+-Icon=io.elementary.photos-viewer
++Icon=/usr/share/icons/cvm-ui-icons/photo.png
+ Terminal=false
+ NoDisplay=true
+ Type=Application

@@ -1,0 +1,32 @@
+pkgname=pantheon-photos-cvm
+pkgver=2.8.0
+pkgrel=1
+pkgdesc='The Pantheon Photos Manager'
+arch=('x86_64')
+url='https://github.com/elementary/photos'
+license=('LGPL2.1')
+depends=('cairo' 'gdk-pixbuf2' 'geocode-glib' 'glib2' 'gst-plugins-base-libs'
+         'gstreamer' 'gtk3' 'json-glib' 'libexif' 'libgee' 'libgexiv2'
+         'libgphoto2' 'libraw' 'libsoup' 'libxml2' 'pango' 'rest' 'sqlite'
+         'webkit2gtk'
+         'libgranite.so' 'libgudev-1.0.so')
+makedepends=('git' 'granite' 'intltool' 'meson' 'vala')
+provides=('pantheon-photos')
+conflicts=('pantheon-photos' 'pantheon-photos-git')
+source=("$pkgver.tar.gz::https://github.com/elementary/photos/archive/refs/tags/$pkgver.tar.gz" "desktop.patch" "desktop-viewer.patch")
+sha256sums=('SKIP' 'SKIP' 'SKIP')
+
+build() {
+  patch photos-$pkgver/data/io.elementary.photos.desktop.in.in desktop.patch
+  patch photos-$pkgver/data/io.elementary.photos-viewer.desktop.in.in desktop-viewer.patch
+
+  arch-meson photos-$pkgver build \
+    # -Dlibunity='false'
+  ninja -C build
+}
+
+package() {
+  DESTDIR="${pkgdir}" ninja -C build install
+}
+
+# vim: ts=2 sw=2 et:
