@@ -1,0 +1,54 @@
+pkgname=pantheon-music-cvm
+pkgver=7.0.0
+pkgrel=1
+pkgdesc='The Pantheon Music Player'
+arch=(x86_64)
+url=https://github.com/elementary/music
+license=(GPL3)
+depends=(
+  cairo
+  gdk-pixbuf2
+  glib2
+  gst-plugins-base-libs
+  gstreamer
+  libgee
+  granite7
+  pango
+  gst-plugins-bad
+  gst-plugins-base
+  gst-plugins-good
+  gst-plugins-ugly
+)
+makedepends=(
+  appstream
+  git
+  gobject-introspection
+  granite
+  intltool
+  meson
+  vala
+  libhandy
+)
+optdepends=(
+  'gst-plugins-base: "Base" plugin libraries'
+  'gst-plugins-good: "Good" plugin libraries'
+  'gst-plugins-bad: "Bad" plugin libraries'
+  'gst-plugins-ugly: "Ugly" plugin libraries'
+  'gst-libav: Libav plugin'
+)
+provides=(pantheon-music)
+conflicts=(pantheon-music pantheon-music-git)
+source=($pkgver.tar.gz::https://github.com/elementary/music/archive/refs/tags/$pkgver.tar.gz desktop.patch)
+sha256sums=('SKIP' 'SKIP')
+
+build() {
+  patch music-$pkgver/data/music.desktop.in desktop.patch
+  arch-meson music-$pkgver build
+  ninja -C build
+}
+
+package() {
+  DESTDIR="${pkgdir}" ninja -C build install
+}
+
+# vim: ts=2 sw=2 et:
