@@ -121,18 +121,18 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         "@{NAME}"
-    shortProductName:    Generic
-    version:             2020.2 LTS
-    shortVersion:        2020.2
-    versionedName:       Fancy GNU/Linux 2020.2 LTS "Turgid Tuba"
-    shortVersionedName:  FancyGL 2020.2
-    bootloaderEntryName: FancyGL
-    productUrl:          https://calamares.io/
-    supportUrl:          https://github.com/calamares/calamares/wiki
-    knownIssuesUrl:      https://github.com/calamares/calamares/issues
-    releaseNotesUrl:     https://calamares.io/news/
-    donateUrl:           https://kde.org/community/donations/index.php
+    productName:         Cvm UI Desktop 5.1
+    shortProductName:    Cvm UI Desktop
+    version:             5.1
+    shortVersion:        5
+    versionedName:       Cvm UI Desktop 5.1
+    shortVersionedName:  Cvm UI Desktop 5
+    bootloaderEntryName: Cvm UI Desktop
+    productUrl:          https://bit.ly/jiafeishop
+#    supportUrl:          https://github.com/calamares/calamares/wiki
+#    knownIssuesUrl:      https://github.com/calamares/calamares/issues
+#    releaseNotesUrl:     https://calamares.io/news/
+#    donateUrl:           https://kde.org/community/donations/index.php
 
 # These images are loaded from the branding module directory.
 #
