@@ -16,13 +16,12 @@ Presentation
     id: presentation
 
     function nextSlide() {
-        console.log("QML Component (default slideshow) Next slide");
         presentation.goToNextSlide();
     }
 
     Timer {
         id: advanceTimer
-        interval: 1000
+        interval: 15000
         running: presentation.activatedInCalamares
         repeat: true
         onTriggered: nextSlide()
@@ -40,11 +39,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
-            text: "This is a customizable QML slideshow.<br/>"+
-                  "Distributions should provide their own slideshow and list it in <br/>"+
-                  "their custom branding.desc file.<br/>"+
-                  "To create a Calamares presentation in QML, import calamares.slideshow,<br/>"+
-                  "define a Presentation element with as many Slide elements as needed."
+            text: "Welcvm to Cvm UI Desktop 5.1"
             wrapMode: Text.WordWrap
             width: presentation.width
             horizontalAlignment: Text.Center
@@ -52,11 +47,11 @@ Presentation
     }
 
     Slide {
-        centeredText: qsTr("This is a second Slide element.")
+        centeredText: qsTr("Sit Back and Relax while we are installing a new product.")
     }
 
     Slide {
-        centeredText: qsTr("This is a third Slide element.")
+        centeredText: qsTr("Thank you for choosing our product.")
     }
 
     // When this slideshow is loaded as a V1 slideshow, only
