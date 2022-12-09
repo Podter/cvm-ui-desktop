@@ -1,5 +1,6 @@
-calamares
-pkg
-src
-*.pkg.tar.*
-calamares-*.tar.gz
+*
+
+!.gitignore
+!cleanup.sh
+!*.patch
+!PKGBUILD
