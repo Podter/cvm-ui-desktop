@@ -1,32 +1,6 @@
 [Plymouth Theme]
-Name[be]=BGRT
-Name[cs]=BGRT
-Name[da]=BGRT
-Name[de]=BGRT
-Name[eo]=BGRT
-Name[es]=BGRT
-Name[eu]=BGRT
-Name[fr]=BGRT
-Name[fur]=BGRT
-Name[hr]=BGRT
-Name[hu]=BGRT
-Name[id]=BGRT
-Name[it]=BGRT
-Name[nl]=BGRT
-Name[pa]=BGRT
-Name[pl]=BGRT
-Name[pt_BR]=BGRT
-Name[ru]=BGRT
-Name[sr]=BGRT
-Name[sv]=BGRT
-Name[uk]=BGRT
-Name[zh_CN]=BGRT
-Name[ms]=BGRT
-Name[he]=BGRT
-Name[fa]=BGRT
-Name[fi]=BGRT
-Name=BGRT
-Description=Jimmac's spinner theme using the ACPI BGRT graphics as background
+Name=BGRT-cvm
+Description=Jimmac's spinner theme using the ACPI BGRT graphics as background. Made for Cvm UI Desktop!
 ModuleName=two-step
 
 [two-step]
