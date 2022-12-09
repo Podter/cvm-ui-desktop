@@ -1,5 +1,5 @@
---- src/calamares-3.2.61/calamares.desktop.in	2022-12-07 22:44:48.217379539 +0700
-+++ src/calamares-3.2.61/calamares.desktop.new.in	2022-12-07 22:45:15.087369587 +0700
+--- src/calamares-3.2.61/calamares.desktop.in	2022-12-09 20:51:55.621672340 +0700
++++ src/calamares-3.2.61/calamares.desktop.new.in	2022-12-09 20:51:46.551672499 +0700
 @@ -1,13 +1,13 @@
  [Desktop Entry]
  Type=Application
@@ -9,7 +9,8 @@
  GenericName=System Installer
  Keywords=calamares;system;installer;
  TryExec=calamares
- Exec=sh -c "pkexec calamares"
+-Exec=sh -c "pkexec calamares"
++Exec=/usr/bin/sudo /usr/bin/calamares
  Comment=Calamares — System Installer
 -Icon=calamares
 +Icon=/usr/share/icons/cvm-ui-icons/download.png
