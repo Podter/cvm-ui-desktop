@@ -126,7 +126,7 @@ strings:
     version:             5.1
     shortVersion:        5
     versionedName:       Cvm UI Desktop 5.1
-    shortVersionedName:  Cvm UI Desktop 5
+    shortVersionedName:  Cvm UI Desktop 5.1
     bootloaderEntryName: Cvm UI Desktop
 #    productUrl:          https://bit.ly/jiafeishop
 #    supportUrl:          https://github.com/calamares/calamares/wiki
