@@ -19,12 +19,14 @@ source=(
 	"yay-support.patch"
         "desktop.patch"
         "desktop.in.patch"
+        "dm.patch"
 )
 sha256sums=(
 	'SKIP'
 	'SKIP'
 	'SKIP'
 	'SKIP'
+        'SKIP'
 )
 
 prepare() {
@@ -34,6 +36,7 @@ prepare() {
 	git apply ../yay-support.patch
         patch ${srcdir}/calamares-${pkgver}/calamares.desktop ../desktop.patch
         patch ${srcdir}/calamares-${pkgver}/calamares.desktop.in ../desktop.in.patch
+        patch  ${srcdir}/calamares-${pkgver}/src/modules/displaymanager/main.py ../dm.patch
 }
 
 
