@@ -1,0 +1,6 @@
+*
+
+!.gitignore
+!*.desktop
+!*.sh
+!PKGBUILD
