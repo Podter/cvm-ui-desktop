@@ -1,0 +1,10 @@
+--- src/music-7.0.0/data/music.desktop.in	2022-12-09 15:41:07.504429111 +0700
++++ src/music-7.0.0/data/music.desktop.name.in	2022-12-09 15:43:16.644429108 +0700
+@@ -1,6 +1,6 @@
+ [Desktop Entry]
+ Type=Application
+-Name=Music
++Name=JIΛmusic
+ GenericName=Music Player
+ Comment=Listen to music
+ Exec=io.elementary.music %U

@@ -38,11 +38,13 @@ optdepends=(
 )
 provides=(pantheon-music)
 conflicts=(pantheon-music pantheon-music-git)
-source=($pkgver.tar.gz::https://github.com/elementary/music/archive/refs/tags/$pkgver.tar.gz desktop.patch)
-sha256sums=('SKIP' 'SKIP')
+source=($pkgver.tar.gz::https://github.com/elementary/music/archive/refs/tags/$pkgver.tar.gz desktop.patch desktop-name.patch)
+sha256sums=('SKIP' 'SKIP' 'SKIP')
 
 build() {
   patch music-$pkgver/data/music.desktop.in desktop.patch
+  patch music-$pkgver/data/music.desktop.in desktop-name.patch
+
   arch-meson music-$pkgver build
   ninja -C build
 }
