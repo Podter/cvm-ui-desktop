@@ -141,26 +141,36 @@ lightdm-pantheon-greeter
 switchboard-plug-pantheon-tweaks-git
 pantheon-dock-git
 switchboard-plug-keyboard-fix
-lightpad
-appcenter
-gnome-weather
+lightpad-cvm
+gnome-software
+gnome-weather-cvm
 file-roller
 pantheon-print
 evince
-onlyoffice-bin
+onlyoffice-cvm
+pantheon-music-cvm
+pantheon-photos-cvm
+pantheon-photos-cvm
 
-# themes
+# themes and settings
 whitesur-gtk-theme-cvm
 bibata-cursor-theme-cvm
 cvm-ui-wallpapers
 cutefish-icons
 cvm-ui-icons
+cvm-default-settings
 
 # fonts
 ttf-droid
 ttf-opensans
 ttf-roboto
 noto-fonts
+ttf-roboto-mono
+inter-font
 
 # web
-firefox
+firefox-cvm
+
+# calamares
+calamares
+cvm-calamares-config
